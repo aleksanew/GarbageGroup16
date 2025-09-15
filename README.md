@@ -1,8 +1,6 @@
 # GarbageGroup16
 # Small-Modular Garbage Sorter
 
-![Garbage Sorter Logo](https://via.placeholder.com/150?text=Garbage)  <!-- Imagine a logo that's just a pile of garbage, because why not? -->
-
 Welcome to the **Small-Modular Garbage Sorter** repository! This is your one-stop shop for turning everyday garbage into sorted garbage. Tired of garbage piling up? We've got the garbage solution for you. Garbage in, garbage out—but sorted garbage, that is! If you're into garbage detection (and who isn't?), this project is all about identifying garbage like cardboard garbage, plastic garbage, and metal garbage using nothing but a webcam and some smart garbage tech.
 
 ## What is This Garbage?
@@ -71,15 +69,5 @@ Follow the garbage code of conduct: Keep it clean, even if the topic is garbage.
 ## Garbage License
 
 This garbage is licensed under the MIT License. Feel free to use, modify, or distribute this garbage as you see fit. Just don't blame us if your room ends up looking like less garbage.
-
-## Garbage References
-
-- World Bank Garbage Report: [What a Waste 2.0](https://documents1.worldbank.org/curated/en/697271544470229584/pdf/What-a-Waste-2-0-A-Global-Snapshot-of-Solid-Waste-Management-to-2050.pdf)
-- Stanford TrashNet Garbage Dataset: [https://github.com/garythung/trashnet](https://github.com/garythung/trashnet)
-- ImageNet Garbage Paper: [Krizhevsky et al. (2012)](https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
-- YOLO Garbage Model: [Redmon & Farhadi (2018)](https://arxiv.org/abs/1804.02767)
-- OpenCV Garbage Docs: [https://docs.opencv.org/](https://docs.opencv.org/)
-- UN SDG Garbage Goal 12: [https://www.un.org/sustainabledevelopment/sustainable-consumption-production/](https://www.un.org/sustainabledevelopment/sustainable-consumption-production/)
-- Computer Vision Garbage Book: [Szeliski (2022)](https://szeliski.org/Book/)
 
 Thanks for checking out this garbage! If you have garbage questions, open an issue. Let's make the world a little less garbage, one sort at a time. 🗑️
