@@ -5,9 +5,7 @@ Welcome to the **Small-Modular Garbage Sorter** repository! This is your one-sto
 
 ## What is This Garbage?
 
-This garbage project is a machine vision-based garbage sorter designed to detect and classify garbage materials in real-time. It grabs video from your webcam, processes the garbage frames, and uses pre-trained models to spot cardboard garbage, plastic garbage, and metal garbage. It's modular, so you can tweak the garbage components without creating more garbage code. Perfect for small-scale garbage management, like in your home or office, where garbage accumulates faster than you can say "garbage day"!
-
-Why "Small-Modular Garbage Sorter"? Because it's small (fits on a Raspberry Pi full of garbage), modular (swap out garbage parts easily), and sorter (sorts your garbage, duh). And yes, the name is dumb on purpose—garbage humor at its finest!
+This garbage project is a machine vision-based garbage sorter designed to detect and classify garbage materials in real-time. It grabs video from your webcam, processes the garbage frames, and uses pre-trained models to spot cardboard garbage, plastic garbage, and metal garbage. It's modular, so you can tweak the garbage components without creating more garbage code. Perfect for small-scale garbage management.
 
 ## Garbage Features
 
@@ -16,7 +14,6 @@ Why "Small-Modular Garbage Sorter"? Because it's small (fits on a Raspberry Pi f
 - **Modular Garbage Design**: Plug-and-play garbage modules for easy upgrades—add more garbage sensors or garbage actuators without rewriting the whole garbage codebase.
 - **Low-Cost Garbage Hardware**: Built with affordable garbage like a $20 webcam, $35 Raspberry Pi, and $10 servos. Total garbage budget: Under $100!
 - **Garbage Integration**: Works with OpenCV for garbage video processing and TensorFlow/PyTorch for garbage model inference.
-- **Fun Garbage Element**: Overuse of the word "garbage" in this README, because garbage puns are the best kind of garbage.
 
 ## Garbage Installation
 
@@ -35,7 +32,6 @@ To get this garbage running on your machine:
 
 3. Download pre-trained garbage models:
    - Grab the TrashNet garbage dataset models from [Stanford TrashNet](https://github.com/garythung/trashnet).
-   - Or use Hugging Face garbage models like ahmzakif/TrashNet-Classification for instant garbage classification.
 
 4. Set up your garbage hardware:
    - Plug in a webcam (any USB garbage will do).
