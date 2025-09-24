@@ -1,0 +1,37 @@
+# Python cache / build
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Jupyter / pytest cache
+.ipynb_checkpoints/
+.pytest_cache/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs / editors
+.vscode/
+.idea/
+
+# Data & models (large files should not go into git)
+data/
+models/
+runs/
+*.onnx
+*.pt
+*.joblib
+
+# Logs / outputs
+*.log
+logs/
