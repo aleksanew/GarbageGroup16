@@ -8,7 +8,7 @@ class Ui:
     def __init__(self):
         a=0
 
-    def _add_text(self, image, trash_type:TrashType):
+    def _add_trash_label(self, image, trash_type:TrashType):
 
         text = trash_type.value
         font = cv2.FONT_HERSHEY_SIMPLEX
@@ -34,7 +34,7 @@ class Ui:
 
         return image
 
-    def _add_color(self, image, trash_type:TrashType):
+    def _add_trash_coloring(self, image, trash_type:TrashType):
 
         if trash_type == trash_type.GLASS: #white
             bg_color = (255, 255, 255)
@@ -74,7 +74,6 @@ class Ui:
 
         cv2.addWeighted(overlay, alpha, image, 1 - alpha, 0, image)
 
-
         return image
 
     def _add_hz(self, image, hz):
@@ -106,9 +105,9 @@ class Ui:
         img = image.copy()
 
         if display_colors:
-            img = self._add_color(img, TrashType.MIXED)
+            img = self._add_trash_coloring(img, TrashType.MIXED)
         if display_labels:
-            img = self._add_text(img, TrashType.MIXED)
+            img = self._add_trash_label(img, TrashType.MIXED)
 
         img = self._add_hz(img, hz)
         return img
