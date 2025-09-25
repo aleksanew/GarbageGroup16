@@ -1,3 +1,4 @@
+import TrashType
 import cv2
 import Camera, Ui
 

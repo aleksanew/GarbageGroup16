@@ -1,13 +1,16 @@
 import cv2
 
+from TrashType import TrashType
+
+
 class Ui:
 
     def __init__(self):
         a=0
 
-    def _add_text(self, image, type):
+    def _add_text(self, image, trash_type:TrashType):
 
-        text = type #should be enum
+        text = trash_type.value
         font = cv2.FONT_HERSHEY_SIMPLEX
         scale = 0.5
         thickness = 1
@@ -31,11 +34,27 @@ class Ui:
 
         return image
 
-    def _add_color(self, image, type):
+    def _add_color(self, image, trash_type:TrashType):
 
-        # make color change based on type
-        bg_color = (0, 0, 255)
-        border_color = (0, 0, 100)
+        if trash_type == trash_type.GLASS: #white
+            bg_color = (255, 255, 255)
+            border_color = (100, 100, 100)
+        elif trash_type == trash_type.PAPER: #green
+            bg_color = (0, 255, 0)
+            border_color = (0, 100, 0)
+        elif trash_type == trash_type.CARDBOARD: #brown
+            bg_color = (120, 140, 179)
+            border_color = (82, 93, 156)
+        elif trash_type == trash_type.PLASTIC: #blue
+            bg_color = (255, 0, 0)
+            border_color = (100, 0, 0)
+        elif trash_type == trash_type.METAL: #red
+            bg_color = (0, 0, 255)
+            border_color = (0, 0, 100)
+        elif trash_type == trash_type.MIXED: #black
+            bg_color = (0, 0, 0)
+            border_color = (0, 0, 0)
+
         border_thickness = 3
         alpha = 0.3
 
@@ -87,9 +106,9 @@ class Ui:
         img = image.copy()
 
         if display_colors:
-            img = self._add_color(img, "Garbage")
+            img = self._add_color(img, TrashType.MIXED)
         if display_labels:
-            img = self._add_text(img, "Garbage")
+            img = self._add_text(img, TrashType.MIXED)
 
         img = self._add_hz(img, hz)
         return img
